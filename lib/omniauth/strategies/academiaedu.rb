@@ -6,7 +6,7 @@ module OmniAuth
 
       option :client_options, {
         :site => 'http://api.academia.edu',
-        :authorize_url => 'http://academia.edu/oauth/authorize'
+        :authorize_url => 'http://api.academia.edu/oauth/authorize'
       }
 
       uid { raw_info['id'] }
