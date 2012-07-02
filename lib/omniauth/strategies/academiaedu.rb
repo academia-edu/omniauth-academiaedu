@@ -9,10 +9,6 @@ module OmniAuth
         :authorize_url => 'http://academia.edu/oauth/authorize'
       }
 
-      def request_phase
-        super
-      end
-
       uid { raw_info['id'] }
 
       info do
@@ -31,10 +27,6 @@ module OmniAuth
 
       def raw_info
         @raw_info ||= access_token.get('/v0/user.json').parsed
-      end
-
-      def callback_phase
-        super
       end
 
     end
