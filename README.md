@@ -2,7 +2,7 @@
 
 This is an omniauth strategy for Academia.edu
 
-To use, you'll need a application key and secret provided by Academia.edu
+To use, you'll need an application key and secret provided by Academia.edu
 
 ## Usage
 
